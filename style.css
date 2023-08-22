@@ -1,26 +1,3 @@
-@font-face {
-    font-family: "Amsterdam-Four";
-    src: url(fonts/AmsterdamFour_400.ttf);
-}
-@font-face {
-    font-family: "Amsterdam";
-    src: url(fonts/Amsterdam_400.ttf);
-}
-@font-face {
-    font-family: "Berday_Free";
-    src: url(fonts/Berday_Free_400.otf);
-}
-@font-face {
-    font-family: "Doknatle";
-    src: url(fonts/Doknatle\ 400.otf);
-}
-@font-face {
-    font-family: "Quikens";
-    src: url(fonts/Quikens\ Regular\ 400.otf);
-}
-*{
-
-}
-header{
-    
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
