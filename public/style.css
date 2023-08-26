@@ -1,0 +1,67 @@
+:root{
+    --gray: #ffffff;
+    --denim: #526D82;
+    --dblue: #5f5f5f;
+}
+@font-face {
+    font-family: 'AmsterdamFour400';
+    src: url('./fonts/AmsterdamFour_400.ttf');
+}
+
+#dark-mode{
+    background: var(--dblue);
+    color: var(--gray);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--gray);
+    color: var(--dblue);
+}
+
+header{
+    display: flex;
+    text-align: center;
+    height: 125px;
+}
+
+header #center{
+    margin-top:  calc(40px - 1vw);
+    
+    margin-bottom: calc(125px/8);
+    flex-grow: 4;
+}
+
+header #left{
+    flex-grow: 1;
+    text-align: left;
+    object-fit:cover;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+header #right{
+    flex-grow: 1;
+    text-align: right;
+    object-fit: none;
+    overflow: hidden;
+}
+
+
+header div#center h1{
+    font-family: 'AmsterdamFour400';
+    font-size: 1.6vw;
+    font-size: max(1.6vw, 1rem);
+    
+}
+
+hr{
+    opacity: 60%;
+    height: 1px;
+}
