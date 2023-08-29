@@ -1,72 +1,105 @@
-:root{
-    --gray: #ffffff;
-    --denim: #526D82;
-    --dblue: #5f5f5f;
+:root {
+  --gray: #ffffff;
+  --denim: #526d82;
+  --dblue: #5f5f5f;
 }
 @font-face {
-    font-family: 'AmsterdamFour400';
-    src: url('./fonts/AmsterdamFour_400.ttf');
-}
-
-#dark-mode{
-    background: var(--dblue);
-    color: var(--gray);
+  font-family: "AmsterdamFour400";
+  src: url("./fonts/AmsterdamFour_400.ttf");
 }
 
 
-*{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+
+#dark-mode {
+  background: var(--dblue);
+  color: var(--gray);
 }
 
-body{
-    background: var(--gray);
-    color: var(--dblue);
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
+body {
+  background: var(--gray);
+  color: var(--dblue);
+}
 
 /* Header */
 
-header{
-    display: flex;
-    text-align: center;
-    height: 125px;
+header {
+  display: flex;
+  text-align: center;
+  height: 125px;
 }
 
-header #center{
-    margin-top:  calc(50px - 2.5vw);
-    flex-grow: 4;
+header #center {
+  flex-grow: 4;
+  font-family: "AmsterdamFour400";
+  font-weight: 400;
+  font-size: clamp(1rem, 3vw, 2rem);
+}
+#center span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 7.8rem;
 }
 
-header #left{
-    flex-grow: 1;
-    text-align: left;
-    object-fit:cover;
-    overflow: hidden;
-    margin-right: 15px;
+header #left {
+  flex-grow: 1;
+  text-align: left;
+  object-fit: cover;
+  overflow: hidden;
+  min-width: 200px;
 }
 
-header #right{
-    flex-grow: 1;
-    text-align: right;
-    object-fit: none;
-    overflow: hidden;
+header #right {
+  flex-grow: 1;
+  text-align: right;
+  object-fit: none;
+  overflow: hidden;
+  min-width: 200px;
 }
 
-
-header div#center h1{
-    font-family: 'AmsterdamFour400';
-    font-size: clamp(1rem, 3vw, 2rem);
-    
+hr {
+  opacity: 60%;
+  height: 1px;
 }
 
-hr{
-    opacity: 60%;
-    height: 1px;
+@media only screen and (max-width: 509px) {
+    header #left{
+        display: none;
+    }
+    header #right{
+        display: none;
+    }
 }
 
 /* End Of Header */
 
 /* Navbar */
+nav{
+    display: flex;
 
+
+}
+
+nav #logo{
+    font-family: "AmsterdamFour400";
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+}
+
+nav #search-bar{
+    
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+nav ul 
