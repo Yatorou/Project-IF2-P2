@@ -25,6 +25,9 @@ body{
     color: var(--dblue);
 }
 
+
+/* Header */
+
 header{
     display: flex;
     text-align: center;
@@ -32,9 +35,7 @@ header{
 }
 
 header #center{
-    margin-top:  calc(40px - 1vw);
-    
-    margin-bottom: calc(125px/8);
+    margin-top:  calc(50px - 2.5vw);
     flex-grow: 4;
 }
 
@@ -56,8 +57,7 @@ header #right{
 
 header div#center h1{
     font-family: 'AmsterdamFour400';
-    font-size: 1.6vw;
-    font-size: max(1.6vw, 1rem);
+    font-size: clamp(1rem, 3vw, 2rem);
     
 }
 
@@ -65,3 +65,8 @@ hr{
     opacity: 60%;
     height: 1px;
 }
+
+/* End Of Header */
+
+/* Navbar */
+
