@@ -93,13 +93,21 @@ nav #logo{
 }
 
 nav #search-bar{
+    flex-grow: 8;
+    display: flex;
     
 }
+
+nav #search-bar input{
+    flex: 1;
+    border-radius: 5px;
+
+    height: 1rem;
+}
+
 
 nav ul{
     display: flex;
     flex-direction: row;
     
 }
-
-nav ul 
