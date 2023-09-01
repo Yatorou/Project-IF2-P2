@@ -230,7 +230,10 @@ nav ul{
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 
+/* Dropdown Menu */
+
 label{
+  margin-top: 5px;
   display:flex;
    flex-direction:column;
    width:30px;
@@ -288,4 +291,29 @@ label{
    transform: translate(14px,-5px) rotatez(45deg);
  
  }
+
+ #menu ul{
+  display: flex;
+  flex-direction: column;
+  position:fixed;
+  right:0;
+  top: 11.5rem;
+  float: right;
+  visibility: hidden
+ }
+
+ #menu ul li{
+  
+  color: ;
+ }
+
+ #check:checked + #menu ul{
+  display: inline;
+  visibility:visible;
+ }
+
+ #menu ul li:hover{
+  background-color: #333232;
+ }
  
+/* End of Dropdown Menu */
