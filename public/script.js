@@ -1,13 +1,11 @@
-document.onreadystatechange = function () {
-    if (document.readyState !== "complete") {
-        document.querySelector(
-            "body").style.visibility = "hidden";
-        document.querySelector(
-            "#loader").style.visibility = "visible";
-    } else {
-        document.querySelector(
-            "#loader").style.display = "none";
-        document.querySelector(
-            "body").style.visibility = "visible";
-    }
-};
+$(window).on("load", function () {
+  $("#loading").hide();
+});
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 1) {
+    $("nav").addClass("sticky");
+  } else {
+    $("nav").removeClass("sticky");
+  }
+});
