@@ -27,7 +27,6 @@
   background: var(--black);
   color: var(--gray);
 }
-
 .sticky {
   position: fixed;
   top: 0;
@@ -65,7 +64,7 @@ body {
   top: 37vh;
   text-align: center;
   color: var(--gray);
-  font-size: 8em;
+  font-size: calc(20vw - 2em);
   position: absolute;
 }
 
@@ -189,7 +188,7 @@ nav div {
   text-decoration: none;
   color: var(--black);
 }
-.searches{
+.searches {
   flex: 2;
   justify-content: flex-end;
 }
@@ -199,15 +198,15 @@ nav div {
   margin-top: 13px;
   border-radius: 10px;
   display: flex;
-  
+
   border: solid 1px #777777a4;
 }
-.search button{
+.search button {
   border: none;
   background: var(--white);
 }
 .search input {
-  display:;
+  display: ;
   border: none;
   flex: 2;
   border-radius: 20px;
@@ -215,14 +214,13 @@ nav div {
   animation: growLeft 300ms ease-in-out forwards;
   transform-origin: top center;
 }
-.search input:focus{
+.search input:focus {
   border: none;
-} 
+}
 
 .dropdown {
   position: relative;
   display: inline-block;
-  
 }
 .dropdown-button {
   border: none;
@@ -277,7 +275,7 @@ nav div {
     width: 60%;
   }
   100% {
-    width: 100%;;
+    width: 100%;
   }
 }
 
@@ -301,7 +299,6 @@ nav div {
   align-items: center;
   width: 90vw;
   display: flex;
-  margin: 0;
   flex-wrap: wrap;
   place-content: center;
   margin-left: auto;
@@ -329,7 +326,7 @@ figure figcaption {
   display: grid;
   align-items: end;
   font-family: sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   overflow-wrap: break-word;
   color: #0000;
@@ -341,12 +338,30 @@ figure figcaption {
   -webkit-mask-clip: text, padding-box;
   margin: -1px;
 }
-
-figure p{
+figure h4{
+  color: var(--white);
+  font-size: 1.4rem;
+}
+figure p {
+  color: var(--white);
   font-size: 1rem;
   font-weight: 300;
 }
+figure a {
+  padding: 10px;
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  border: solid 1px var(--gray);
+  width: fit-content;
+}
+figure a:hover {
+  color: var(--white);
 
+  background: var(--gray);
+}
 figure:hover figcaption {
   --_i: 0%;
 }
