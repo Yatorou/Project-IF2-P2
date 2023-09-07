@@ -178,7 +178,6 @@ nav div {
   overflow: hidden;
   display: flex;
 }
-
 .logo a {
   cursor: pointer;
   font-family: "AmsterdamFour400";
@@ -188,6 +187,8 @@ nav div {
   text-decoration: none;
   color: var(--black);
 }
+
+/* Search */
 .searches {
   flex: 2;
   justify-content: flex-end;
@@ -209,14 +210,12 @@ nav div {
   display: ;
   border: none;
   flex: 2;
-  border-radius: 20px;
   padding: 0px 10px;
   animation: growLeft 300ms ease-in-out forwards;
   transform-origin: top center;
 }
-.search input:focus {
-  border: none;
-}
+
+/* Menu */
 
 .dropdown {
   position: relative;
@@ -262,10 +261,33 @@ nav div {
 .dropdown-content:hover {
   background: var(--igray);
 }
+.dropdown:hover .dropdown-contents,
 .dropdown:focus-within .dropdown-contents {
   display: block;
   background: var(--igray);
 }
+
+.cat-list {
+  display: block;
+  font-size: 0.8rem;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--black);
+  width: 90px;
+  height: 100%;
+}
+.cat-list:hover {
+  background: var(--igray);
+  box-shadow: 0px 0px 16px 2px rgba(216, 214, 214, 0.515);
+  border: none;
+}
+
+.category:hover  .cat-list{
+  display: block;
+  background: var(--igray);
+}
+
+/* Navbar Animation */
 
 @keyframes growLeft {
   0% {
@@ -338,7 +360,7 @@ figure figcaption {
   -webkit-mask-clip: text, padding-box;
   margin: -1px;
 }
-figure h4{
+figure h4 {
   color: var(--white);
   font-size: 1.4rem;
 }
