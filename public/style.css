@@ -281,8 +281,31 @@ nav div {
   box-shadow: 0px 0px 16px 2px rgba(216, 214, 214, 0.515);
   border: none;
 }
-
-.category:hover  .cat-list{
+.cat-lists{
+  overflow: hidden;
+  height: 100%;
+  display: none;
+  animation: growDown 300ms ease-in-out forwards;
+ 
+  transform-origin: top center;
+  
+}
+.category{
+  position: relative;
+  display: inline-block;
+  
+}
+.category p{
+  background: var(--white);
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--black);
+  width: 90px;
+  height: 100%;
+}
+.category:hover  .cat-lists,
+.category:focus-within .cat-lists{
   display: block;
   background: var(--igray);
 }

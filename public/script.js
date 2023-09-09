@@ -21,14 +21,4 @@ $(window).scroll(function () {
 });
 
 //Dropdown
-$(document).ready(function () {
-  $(document).on("click", function (e) {
-    const dropdown = $(".dropdown-menu");
-    const menuBtn = $("#menu-btn");
 
-    if (dropdown.length && menuBtn.length && !menuBtn.is(e.target)) {
-      dropdown.hide();
-      menuBtn.prop("checked", false);
-    }
-  });
-});
