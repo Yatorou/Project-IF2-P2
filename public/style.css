@@ -3,10 +3,11 @@
   --igray: #a29f9f6d;
   --white: #fffefe;
   --black: #0f0f0f;
+  --blue: #3fa0fac0;
 }
 /* Colors */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Open+Sans:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,400&family=Rubik:wght@600&display=swap");
 
 @font-face {
   font-family: "AmsterdamFour400";
@@ -30,6 +31,7 @@
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -182,35 +184,10 @@ nav div {
   color: var(--black);
 }
 
-/* Search */
-.searches {
+.void {
   flex: 2;
   justify-content: flex-end;
 }
-.search {
-  width: fit-content;
-  margin: 15px 0;
-  margin-top: 13px;
-  border-radius: 10px;
-  display: flex;
-
-  border: solid 1px #777777a4;
-}
-.search button {
-  border: none;
-  background: var(--white);
-}
-.search input {
-  display: ;
-  border: none;
-  flex: 2;
-  padding: 0px 10px;
-  animation: growLeft 300ms ease-in-out forwards;
-  transform-origin: top center;
-}
-
-/* Menu */
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -231,7 +208,7 @@ nav div {
   border: none;
 }
 .dropdown-contents {
-  right: 2.5vw;
+  right: calc(2.5vw + 9px);
   margin-top: 6px;
   border-radius: 15px;
   z-index: 10;
@@ -293,7 +270,7 @@ nav div {
 
 .welcome {
   width: 75vw;
-  max-width: 70rem;
+  max-width: 60rem;
 
   margin: 1rem auto;
   border-radius: 20px;
@@ -303,7 +280,6 @@ nav div {
   flex-direction: column;
 }
 .welcome .tbox {
- 
   border-radius: 20px;
   display: flex;
   flex-direction: row;
@@ -315,7 +291,27 @@ nav div {
   margin-bottom: 0;
 }
 
+.twel img{
+  object-fit: cover;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  box-shadow: 0 0 10px 0 var(--gray);
+}
+
+.twel audio{
+  padding: 1rem;
+  background: none;
+}
+
+.twel h3{
+  padding: 1rem;
+  font-size: 3vw;
+  font-weight: 300;
+}
+
 .welcome .tbox {
+  object-fit: fill;
   min-height: fit-content;
   border-radius: 20px;
   display: flex;
@@ -325,10 +321,9 @@ nav div {
   box-shadow: 0 0 12px 0 var(--gray);
   flex-wrap: wrap;
 }
-
 .welcome .tbox .tdes {
-  font-family: "Rubik", sans-serif;
-  font-size: 2vw;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2vw;
   font-weight: 300;
   margin: auto auto;
   padding: 1rem;
@@ -337,7 +332,12 @@ nav div {
 .welcome .tbox .ides {
   box-shadow: 0 0 12px 0 var(--gray);
   border-radius: 20px;
-  height: 40vw;
+  height: 20vw;
+  flex: 2;
+  display: flex;
+}
+.ides img{
+  object-fit:cover;
   flex: 2;
 }
 
@@ -362,7 +362,8 @@ figure {
   border-radius: 1rem;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 0 16px 0 #a7a7a7;
+  box-shadow: 0 4px 16px -10px var(--gray);
+  transition: box-shadow 0.5s;
 }
 figure img {
   margin-left: auto;
@@ -408,9 +409,11 @@ figure a {
   border: solid 1px var(--gray);
   width: fit-content;
 }
+figure:hover {
+  box-shadow: 0 4px 20px 0px var(--gray);
+}
 figure a:hover {
   color: var(--white);
-
   background: var(--gray);
 }
 figure:hover figcaption {
@@ -429,32 +432,57 @@ figure:hover img {
 /* End Of Item */
 
 /* Footer */
-footer {
+footer{
+  padding: 1rem auto ;
   width: 95vw;
-  margin: 1.2rem auto;
-  border-radius: 20px;
-  box-shadow: 0px 0px 12px 0px #9e9d9d;
-  font-family: "Doknatle";
-  background: var(--white);
+  font-family: 'Open Sans', sans-serif;
+
+}
+.fcontainer{
   display: flex;
-  flex-direction: row;
-  height: fit-content;
+  flex-wrap: wrap;
+}
+.fcontainer div{
   text-align: center;
+  min-width: 20rem;
+  font-size: large;
+  flex: 1;
+  padding: 1rem;
 }
-footer .first {
-  flex: 2;
+footer h3{
+  padding-bottom: 15px;
 }
-footer .second {
-  border: solid 1px var(--gray);
-  flex: 2;
-  margin: 10px;
-}
-.input-container div {
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px;
+footer li{
+  padding-bottom: 4px;
 }
 
-.input-container div label {
-  margin-right: auto;
+footer a{
+  text-decoration: none;
+  color: var(--black);
 }
+
+.social ul{
+  display: flex;
+ 
+}
+
+.social li{
+  flex: 1;
+
+  margin: auto auto;
+}
+
+box-icon{   
+  font-size: 5rem;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.fcopyright{
+  color: var(--black);
+  padding: 2rem 0;
+  font-size: large;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
