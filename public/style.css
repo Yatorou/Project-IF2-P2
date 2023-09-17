@@ -6,19 +6,11 @@
 }
 /* Colors */
 
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap");
 
 @font-face {
   font-family: "AmsterdamFour400";
   src: url("./fonts/AmsterdamFour_400.ttf");
-}
-@font-face {
-  font-family: "Doknatle";
-  src: url("./fonts/Doknatle\ 400.otf");
-}
-@font-face {
-  font-family: "Quikens";
-  src: url("./fonts/Quikens\ Regular\ 400.otf");
 }
 
 /* Fonts */
@@ -269,49 +261,6 @@ nav div {
   background: var(--igray);
 }
 
-.cat-list {
-  display: block;
-  font-size: 0.8rem;
-  padding: 10px;
-  text-decoration: none;
-  color: var(--black);
-  width: 90px;
-  height: 100%;
-}
-.cat-list:hover {
-  background: var(--igray);
-  box-shadow: 0px 0px 16px 2px rgba(216, 214, 214, 0.515);
-  border: none;
-}
-.cat-lists{
-  overflow: hidden;
-  height: 100%;
-  display: none;
-  animation: growDown 300ms ease-in-out forwards;
- 
-  transform-origin: top center;
-  
-}
-.category{
-  position: relative;
-  display: inline-block;
-  
-}
-.category p{
-  background: var(--white);
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: var(--black);
-  width: 90px;
-  height: 100%;
-}
-.category:hover  .cat-lists,
-.category:focus-within .cat-lists{
-  display: block;
-  background: var(--igray);
-}
-
 /* Navbar Animation */
 
 @keyframes growLeft {
@@ -340,8 +289,62 @@ nav div {
 
 /* End of Navbar */
 
-/* Main Content */
-.main {
+/* Welcome Design */
+
+.welcome {
+  width: 75vw;
+  max-width: 70rem;
+
+  margin: 1rem auto;
+  border-radius: 20px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.welcome .tbox {
+ 
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 12px 0 var(--gray);
+}
+.welcome .tbox:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.welcome .tbox {
+  min-height: fit-content;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 12px 0 var(--gray);
+  flex-wrap: wrap;
+}
+
+.welcome .tbox .tdes {
+  font-family: "Rubik", sans-serif;
+  font-size: 2vw;
+  font-weight: 300;
+  margin: auto auto;
+  padding: 1rem;
+  flex: 2;
+}
+.welcome .tbox .ides {
+  box-shadow: 0 0 12px 0 var(--gray);
+  border-radius: 20px;
+  height: 40vw;
+  flex: 2;
+}
+
+/* End of Welcome */
+
+/* Item Content */
+.items {
   padding: 10px;
   align-items: center;
   width: 90vw;
@@ -350,6 +353,7 @@ nav div {
   place-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 6rem;
 }
 figure {
   width: 250px;
@@ -422,10 +426,10 @@ figure:hover img {
   }
 }
 
-/* End Of Main */
+/* End Of Item */
 
 /* Footer */
-footer{
+footer {
   width: 95vw;
   margin: 1.2rem auto;
   border-radius: 20px;
@@ -436,22 +440,21 @@ footer{
   flex-direction: row;
   height: fit-content;
   text-align: center;
-
 }
-footer .first{
+footer .first {
   flex: 2;
 }
-footer .second{
+footer .second {
   border: solid 1px var(--gray);
   flex: 2;
   margin: 10px;
 }
-.input-container div{
+.input-container div {
   display: flex;
   flex-direction: column;
   margin: 0 10px;
 }
 
-.input-container div label{
+.input-container div label {
   margin-right: auto;
 }
