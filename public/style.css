@@ -300,8 +300,10 @@ nav div {
 }
 
 .twel audio{
+  width: 20vw;
+  color: var(--igray);
+  border-radius: 40px;
   padding: 1rem;
-  background: none;
 }
 
 .twel h3{
@@ -312,7 +314,7 @@ nav div {
 
 .welcome .tbox {
   object-fit: fill;
-  min-height: fit-content;
+  height: fit-content;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
@@ -323,11 +325,13 @@ nav div {
 }
 .welcome .tbox .tdes {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2vw;
+  font-size: 2vw;
   font-weight: 300;
   margin: auto auto;
   padding: 1rem;
   flex: 2;
+  min-width: 200px;
+  
 }
 .welcome .tbox .ides {
   box-shadow: 0 0 12px 0 var(--gray);
@@ -335,6 +339,8 @@ nav div {
   height: 20vw;
   flex: 2;
   display: flex;
+  min-width: 200px;
+  min-height: 200px;
 }
 .ides img{
   object-fit:cover;
@@ -463,19 +469,11 @@ footer a{
 
 .social ul{
   display: flex;
- 
 }
 
 .social li{
   flex: 1;
-
   margin: auto auto;
-}
-
-box-icon{   
-  font-size: 5rem;
-  height: fit-content;
-  overflow: hidden;
 }
 
 .fcopyright{
