@@ -277,6 +277,7 @@ nav div {
   align-items: center;
 }
 .wcard {
+  padding: 2rem;
   width: 70%;
   overflow: hidden;
   margin: 1rem auto;
@@ -289,7 +290,7 @@ nav div {
 .wimgcard {
   overflow: hidden;
   box-shadow: 0 0 15px -3px var(--gray);
-  margin: 2rem;
+  margin: 2rem auto;
   border-radius: 50%;
   flex: 1;
   width: 250px;
@@ -308,10 +309,13 @@ nav div {
   padding: 1rem;
   flex: 2;
   min-width: 14rem;
+  max-width: 33rem;
+  margin: auto;
 }
 .wcardtxt h2 {
   font-size: 2rem;
-  margin: 1.5rem auto;
+  margin: 1rem auto;
+  margin-top: 0;
   font-weight: 100;
 }
 .wcardtxt p {
