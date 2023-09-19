@@ -271,7 +271,6 @@ nav div {
 .welcome {
   width: 75vw;
   max-width: 60rem;
-
   margin: 1rem auto;
   border-radius: 20px;
   padding: 1rem;
@@ -291,7 +290,7 @@ nav div {
   margin-bottom: 0;
 }
 
-.twel img{
+.twel img {
   object-fit: cover;
   border-radius: 10px;
   border: none;
@@ -299,14 +298,14 @@ nav div {
   box-shadow: 0 0 10px 0 var(--gray);
 }
 
-.twel audio{
+.twel audio {
   width: 20vw;
   color: var(--igray);
   border-radius: 40px;
   padding: 1rem;
 }
 
-.twel h3{
+.twel h3 {
   padding: 1rem;
   font-size: 3vw;
   font-weight: 300;
@@ -324,14 +323,13 @@ nav div {
   flex-wrap: wrap;
 }
 .welcome .tbox .tdes {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 2vw;
   font-weight: 300;
   margin: auto auto;
   padding: 1rem;
   flex: 2;
   min-width: 200px;
-  
 }
 .welcome .tbox .ides {
   box-shadow: 0 0 12px 0 var(--gray);
@@ -342,8 +340,8 @@ nav div {
   min-width: 200px;
   min-height: 200px;
 }
-.ides img{
-  object-fit:cover;
+.ides img {
+  object-fit: cover;
   flex: 2;
 }
 
@@ -438,77 +436,182 @@ figure:hover img {
 /* End Of Item */
 
 /* Order */
-.order{
+.order {
+  font-family: "Open Sans", sans-serif;
   width: 95vw;
   margin: 0 auto;
+  padding: 2rem;
   border-radius: 20px;
   display: flex;
-  box-shadow: 0 0 10px 0 var(--gray);
+  flex-wrap: wrap;
+  box-shadow: 0 0 5px 0 var(--gray);
 }
-.forder{
-  height: 30vh;
+.order h1 {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.forder {
+  box-shadow: 0 0 5px 0 var(--gray);
+  min-width: 295px;
+  border-radius: 20px;
+  max-width: 20rem;
+  margin: auto;
+  width: 20vw;
+  height: fit-content;
   border: none;
-  padding: 1rem ;
+  padding: 2rem;
   flex: 2;
   display: flex;
   flex-direction: column;
 }
-.forder input{
+.forder input {
+  font-size: 0.8rem;
+  height: 2rem;
   border: none;
   border-bottom: solid 1px var(--gray);
+  outline: none;
+  margin-bottom: 1rem;
 }
-.forder input{
-  
+.forder select {
+  background: none;
+  box-shadow: 0 0 5px 0 var(--gray);
+  height: 3rem;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.preview{
+.fchck{
+  padding: 0 10px;
+  display: flex;
+}
+.fchck label{
+  margin-top: 0.5rem;
+}
+.fchck input[type="checkbox"]{
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+
+
+.forder input[type="submit"] {
+  background: none;
+  border: none;
+  height: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 var(--gray);
+  cursor: pointer;
+}
+
+.preview {
+  max-width: 825px;
+  min-width: 300px;
+  min-height: 30rem;
+  flex: 2;
+  width: 20rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.hide {
+  display: none;
+}
+.preview .title {
+  font-weight: 300;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.preview .box {
+  box-shadow: 0 0 3px 0 var(--gray);
+  flex: 2;
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.preview .box h3 {
+  font-weight: 300;
+}
+.bnavbar {
+  box-shadow: 0 0 3px 0 var(--gray);
+  padding: 1rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 0;
+  border-radius: 20px;
+  height: fit-content;
+  width: 100%;
+}
+.dmain {
+  box-shadow: 0 0 3px 0 var(--gray);
+  border-radius: 20px;
+  margin: 1rem 0;
+  padding-top: 5.3rem;
+  text-align: center;
   flex: 2;
 }
+.dfooter {
+  box-shadow: 0 0 3px 0 var(--gray);
+  padding: 1rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 0;
+  border-radius: 20px;
+  height: fit-content;
+  width: 100%;
+}
+
 /* End Of Order */
 
-/* Footer */
-footer{
-  padding: 1rem auto ;
-  width: 95vw;
-  font-family: 'Open Sans', sans-serif;
+/* Profile */
 
+/* End Of Profile */
+
+/* Footer */
+footer {
+  padding: 1rem auto;
+  width: 95vw;
+  font-family: "Open Sans", sans-serif;
 }
-.fcontainer{
+.fcontainer {
   display: flex;
   flex-wrap: wrap;
 }
-.fcontainer div{
+.fcontainer div {
   text-align: center;
   min-width: 20rem;
   font-size: large;
   flex: 1;
   padding: 1rem;
 }
-footer h3{
+footer h3 {
   padding-bottom: 15px;
 }
-footer li{
+footer li {
   padding-bottom: 4px;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   color: var(--black);
 }
 
-.social ul{
+.social ul {
   display: flex;
 }
 
-.social li{
+.social li {
   flex: 1;
   margin: auto auto;
 }
 
-.fcopyright{
+.fcopyright {
   color: var(--black);
   padding: 2rem 0;
   font-size: large;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
 }
-

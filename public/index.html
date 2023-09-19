@@ -148,21 +148,58 @@
     </div>
     <div class="order">
       <form action="" class="forder">
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Alamat">
-        <select name="" id="">
+        <input type="text" placeholder="Brand Name*" maxlength="20" id="Name" />
+        <input
+          type="email"
+          placeholder="Email*"
+          required
+          id="Email"
+        />
+        <input
+          type="text"
+          placeholder="Address*"
+          maxlength="20"
+          required
+          id="Address"
+        />
+        <input
+          type="price"
+          placeholder="Your Price (Your Budget in US$)*"
+          maxlength="10"
+          required
+        />
+        <select name="Product" id="" required>
           <option value="gd">Graphic Design</option>
-          <option value="gd">Website Design</option>
-          <option value="gd">3D Design</option>
-          <option value="gd">Logo Design</option>
+          <option value="wd">Website Design</option>
+          <option value="3d">3D Design</option>
+          <option value="ld">Logo Design</option>
         </select>
+        <div class="fchck">
+          <label for="wbprvw">Website Preview</label>
+          <input type="checkbox" id="wbprvw" />
+        </div>
+
+        <input type="submit" value="Buy!" />
       </form>
-      <div class="preview">
-        h
+      <div class="preview hide">
+        <h3 class="title">Website Preview :</h3>
+        <div class="box">
+          <div class="bnavbar"><h3 id="bnavbars">Name</h3></div>
+          <div class="dmain"><h3 class="dmains">Content</h3></div>
+          <div class="dfooter">
+            <h3 id="oemail">Email</h3>
+            <h3 id="oaddress">Address</h3>
+          </div>
+        </div>
       </div>
     </div>
-    
+
+    <div class="profile">
+      <div class="pcontainer">
+        
+      </div>
+    </div>
+
     <footer>
       <div class="fcontainer">
         <div class="company">
