@@ -437,6 +437,34 @@ figure:hover img {
 
 /* End Of Item */
 
+/* Order */
+.order{
+  width: 95vw;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0 0 10px 0 var(--gray);
+}
+.forder{
+  height: 30vh;
+  border: none;
+  padding: 1rem ;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.forder input{
+  border: none;
+  border-bottom: solid 1px var(--gray);
+}
+.forder input{
+  
+}
+.preview{
+  flex: 2;
+}
+/* End Of Order */
+
 /* Footer */
 footer{
   padding: 1rem auto ;
