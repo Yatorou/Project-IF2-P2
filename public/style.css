@@ -167,7 +167,7 @@ nav {
   margin-right: auto;
   border-radius: 20px;
   box-shadow: 0px 0px 12px 0px #9e9d9d;
-  font-family: "Doknatle";
+  font-family: "Open Sans", sans-serif;
   background: var(--white);
 }
 nav div {
@@ -269,80 +269,53 @@ nav div {
 /* Welcome Design */
 
 .welcome {
-  width: 75vw;
-  max-width: 60rem;
-  margin: 1rem auto;
-  border-radius: 20px;
-  padding: 1rem;
-  text-align: center;
+  margin: 4rem auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.welcome .tbox {
-  border-radius: 20px;
+.wcard {
+  width: 70%;
+  overflow: hidden;
+  margin: 1rem auto;
+  box-shadow: 0 0 15px -5px var(--gray);
   display: flex;
   flex-direction: row;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  box-shadow: 0 0 12px 0 var(--gray);
-}
-.welcome .tbox:nth-last-child(1) {
-  margin-bottom: 0;
-}
-
-.twel img {
-  object-fit: cover;
-  border-radius: 10px;
-  border: none;
-  width: 100%;
-  box-shadow: 0 0 10px 0 var(--gray);
-}
-
-.twel audio {
-  width: 20vw;
-  color: var(--igray);
-  border-radius: 40px;
-  padding: 1rem;
-}
-
-.twel h3 {
-  padding: 1rem;
-  font-size: 3vw;
-  font-weight: 300;
-}
-
-.welcome .tbox {
-  object-fit: fill;
-  height: fit-content;
   border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  box-shadow: 0 0 12px 0 var(--gray);
   flex-wrap: wrap;
 }
-.welcome .tbox .tdes {
+.wimgcard {
+  overflow: hidden;
+  box-shadow: 0 0 15px -3px var(--gray);
+  margin: 2rem;
+  border-radius: 50%;
+  flex: 1;
+  width: 250px;
+  object-fit: cover;
+  min-height: 12rem;
+  min-width: 12rem;
+  max-height: 12rem;
+  max-width: 12rem;
+}
+.wimgcard img {
+  width: 100%;
+  height: 100%;
+}
+.wcardtxt {
   font-family: "Open Sans", sans-serif;
-  font-size: 2vw;
-  font-weight: 300;
-  margin: auto auto;
   padding: 1rem;
   flex: 2;
-  min-width: 200px;
+  min-width: 14rem;
 }
-.welcome .tbox .ides {
-  box-shadow: 0 0 12px 0 var(--gray);
-  border-radius: 20px;
-  height: 20vw;
-  flex: 2;
-  display: flex;
-  min-width: 200px;
-  min-height: 200px;
+.wcardtxt h2 {
+  font-size: 2rem;
+  margin: 1.5rem auto;
+  font-weight: 100;
 }
-.ides img {
-  object-fit: cover;
-  flex: 2;
+.wcardtxt p {
+  word-wrap: break-word;
 }
 
 /* End of Welcome */
@@ -445,6 +418,7 @@ figure:hover img {
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0 0 5px 0 var(--gray);
+  margin-bottom: 6rem;
 }
 .order h1 {
   margin: auto;
@@ -483,19 +457,17 @@ figure:hover img {
   border-radius: 5px;
   cursor: pointer;
 }
-.fchck{
+.fchck {
   padding: 0 10px;
   display: flex;
 }
-.fchck label{
+.fchck label {
   margin-top: 0.5rem;
 }
-.fchck input[type="checkbox"]{
+.fchck input[type="checkbox"] {
   margin-left: 10px;
   margin-top: 2px;
 }
-
-
 
 .forder input[type="submit"] {
   background: none;
