@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Design.</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div id="loading">
+      <h2>Loading</h2>
+      <h2>Loading</h2>
+      <h4>Web By Arya_FP BTW</h4>
+    </div>
+    <header>
+      <div class="h-left">
+        <img src="../img/banner_left.svg" alt="Banner" />
+      </div>
+      <div class="h-center">
+        <span>Design.</span>
+      </div>
+      <div class="h-right">
+        <img src="../img/banner_right.svg" alt="Banner" />
+      </div>
+    </header>
+    <nav>
+      <div>
+        <div class="logo"><a href="../index.html">Design.</a></div>
+        <div class="void"></div>
+        <div>
+          <div class="dropdown">
+            <button class="dropdown-button">Menu</button>
+            <ul class="dropdown-contents">
+              <li><a href="../index.html" class="dropdown-content">Home</a></li>
+              <li>
+                <a href="./Items.html" class="dropdown-content">Item</a>
+              </li>
+              <li>
+                <a href="./Order.html" class="dropdown-content">Order</a>
+              </li>
+              <li>
+                <a href="./Profile.html" class="dropdown-content"
+                  >Profile</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="welcome">
+      <div class="wcard">
+        <div class="wimgcard">
+          <img src="./img/logo-web.jpeg" alt="Logo" />
+        </div>
+
+        <div class="wcardtxt">
+          <h2>Welcome To My Website</h2>
+          <p>
+            Discover a world of creative possibilities at our website, where
+            graphic design, logos, and mesmerizing 3D art come together to turn
+            your ideas into captivating visual masterpieces.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="items">
+      <figure>
+        <img
+          src="https://miro.medium.com/v2/resize:fit:2000/1*9g2hSDNT3Cao2vh1HMO35A.jpeg"
+        />
+        <figcaption>
+          <h4>Graphic Design</h4>
+          <br />
+          <p>$50~$200</p>
+          <a href="./pages/Order.html">More</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://lh6.googleusercontent.com/ZZfwmV5pgIEYJcVuC7owXwxpFKoWvTVjoSkz5tKLe1GfTMg67kKolTlx-LXvdLjhF6vdJuoQKVat7YOWhAJVgKzJ60odZQk_ngjndTIpl3UVvcNjxMNPoT7Gc4QnFON50TawUCa1"
+        />
+        <figcaption>
+          <h4>Website Design</h4>
+          <br />
+          <p>$15~$160</p>
+          <a href="./pages/Order.html">More</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://learn.g2.com/hs-fs/hubfs/Free%203D%20Design%20Software.png?height=458&name=Free%203D%20Design%20Software.png"
+        />
+        <figcaption>
+          <h4>3D Design</h4>
+          <br />
+          <p>$100~$500</p>
+          <a href="./pages/Order.html">More</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://i.pinimg.com/474x/85/2a/9f/852a9fbcb7c43d505b713f9c0357585b.jpg"
+        />
+        <figcaption>
+          <h4>Logo Design</h4>
+          <br />
+          <p>$5~$140</p>
+          <a href="./pages/Order.html">More</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="order">
+      <form action="" class="forder">
+        <input type="text" placeholder="Brand Name*" maxlength="20" id="Name" />
+        <input type="email" placeholder="Email*" required id="Email" />
+        <input
+          type="text"
+          placeholder="Address*"
+          maxlength="20"
+          required
+          id="Address"
+        />
+        <input
+          type="price"
+          placeholder="Your Price (Your Budget in US$)*"
+          maxlength="10"
+          required
+        />
+        <select name="Product" id="" required>
+          <option value="gd">Graphic Design</option>
+          <option value="wd">Website Design</option>
+          <option value="3d">3D Design</option>
+          <option value="ld">Logo Design</option>
+        </select>
+        <div class="fchck">
+          <label for="wbprvw">Website Preview</label>
+          <input type="checkbox" id="wbprvw" />
+        </div>
+
+        <input type="submit" value="Buy!" />
+      </form>
+      <div class="preview hide">
+        <h3 class="title">Website Preview :</h3>
+        <div class="box">
+          <div class="bnavbar"><h3 id="bnavbars">Name</h3></div>
+          <div class="dmain"><h3 class="dmains">Content</h3></div>
+          <div class="dfooter">
+            <h3 id="oemail">Email</h3>
+            <h3 id="oaddress">Address</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile">
+      <div class="pcontainer"></div>
+    </div>
+
+    <footer>
+      <div class="fcontainer">
+        <div class="company">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Copyright</a></li>
+            <li><a href="">Awards and Accolades</a></li>
+          </ul>
+        </div>
+        <div class="help">
+          <h3>Get Help</h3>
+          <ul>
+            <li><a href="">Customer Service</a></li>
+            <li><a href="">Bug Report</a></li>
+            <li><a href="">Question</a></li>
+            <li><a href="">Suggestion</a></li>
+          </ul>
+        </div>
+        <div class="service">
+          <h3>Service</h3>
+          <ul>
+            <li><a href="">Web Design</a></li>
+            <li><a href="">Logo Design</a></li>
+            <li><a href="">Graphic Art</a></li>
+            <li><a href="">3D Art</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/Yatorou"
+                ><box-icon type="logo" name="github"></box-icon
+              ></a>
+            </li>
+            <li>
+              <a href="https://youtube.com/@yo6791?feature=shared"
+                ><box-icon type="logo" name="youtube"></box-icon
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/arya_f.p/"
+                ><box-icon type="logo" name="instagram" size="xl"></box-icon
+              ></a>
+            </li>
+            <li>
+              <a href=""><box-icon type="logo" name="facebook"></box-icon></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="fcopyright"><i>&copy; 2023 Copyright: Yatorou</i></p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

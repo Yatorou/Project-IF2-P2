@@ -416,13 +416,12 @@ figure:hover img {
 .order {
   font-family: "Open Sans", sans-serif;
   width: 95vw;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 2rem;
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0 0 5px 0 var(--gray);
-  margin-bottom: 6rem;
 }
 .order h1 {
   margin: auto;
